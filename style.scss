@@ -147,7 +147,7 @@ a {
 .input__browse {
     height: 38px;
     width: 301px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
     font-size: 14px;
@@ -166,7 +166,7 @@ a {
     left: 366px;
     height: 38px;
     width: 38px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #ffffff;
     border: 0;
     border-left: 1px solid #e6e6e6;
 }
@@ -187,7 +187,113 @@ a {
 
 .header__cart {
     width: 32px;
-    margin-right: 26px;
+    padding: 26px;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart:hover .cart__drop{
+    display: flex;
+}
+
+.cart__drop{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    left: 12px;
+    height: 400px;
+    width: 222px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cart__drop__item{
+    display: flex;
+    height: 85px;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+.cart__drop__item_img{
+    width: 72px;
+    margin-right: 14px;
+}
+
+.cart__drop__item__content{
+    width: 100px;
+}
+
+.cart__drop__item__content__h3{
+    font-size: 12px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.cart__drop__item__rating{
+    font-size: 12px;
+    color: #e4af48;
+    margin-bottom: 12px;
+}
+
+.cart__drop__item__content__text{
+    font-size: 12px;
+    color: $ColorSite;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.cart__drop__item_cancel{
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    color: #c0c0c0;
+    align-self: center;
+}
+
+.cart__drop__box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart__drop__price{
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.cart__drop__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;
+}
+
+.cart__drop__button__last{
+    margin-top: 11px;
+}
+
+.cart__drop__button:hover{
+    border: 1px solid $ColorSite;
+    color: $ColorSite;
 }
 
 .button {
