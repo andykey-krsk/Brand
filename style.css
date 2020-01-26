@@ -378,6 +378,7 @@ a {
 }
 
 .menu__link {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
   color: #222222;
@@ -386,6 +387,71 @@ a {
   text-transform: uppercase;
   padding: 20px;
   display: block;
+}
+
+.menu__link:hover .drop__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drop__menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 806px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #9f9f9f;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.drop__menu__column {
+  width: 234px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.super-sale__link {
+  display: block;
+  position: relative;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.super-sale__img {
+  width: 249px;
+  height: 118px;
+  background-image: url(img/super_sele.png);
+  margin-left: -15px;
+}
+
+.super-sale__text {
+  position: absolute;
+  width: 71px;
+  right: 10px;
+  bottom: 12px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .promo {
