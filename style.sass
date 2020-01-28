@@ -786,13 +786,63 @@ details[open] > summary::after
 .chekout
   padding-top: 90px
 
+.chekout__details
+  border-top: 1px solid #e8e8e8
+  border-bottom: 1px solid #e8e8e8
+
+.chekout__list::-webkit-details-marker
+  display: none
+
+details[open] > .chekout__list::after
+  content: none
+
 .chekout__list
+  display: flex
+  align-items: center
+  height: 73px
   font-size: 16px
   font-weight: bold
   color: #222222
   text-align: left
   text-transform: uppercase
 
+.chekout__drop
+  display: flex
+  padding: 10px 35px 70px 35px
+
+.checkout__button
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50px
+  width: 180px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  font-size: 14px
+  font-weight: bold
+  color: #4a4a4a
+  text-transform: uppercase
+
+.checkout__button:hover
+  border: 1px solid $ColorSite
+  color: $ColorSite
+
+.checkout__input
+  height: 45px
+  width: 390px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+.checkout__h3
+  font-size: 13px
+  color: #222222
+  text-transform: uppercase
+
+.checkout__text
+  font-size: 13px
+  color: #b3b2b2
+  text-align: left
+  line-height: 20px
 
 .subscribe
   height: 438px
