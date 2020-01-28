@@ -261,24 +261,52 @@
     <section class="chekout center">
         <details class="chekout__details">
             <summary class="chekout__list">01. Shipping Adress</summary>
-            <div class="chekout__drop">
-                <div class="chekout__flex">
-                    zxcc
-                    zxcc
-                    <div class="checkout__button">Continue</div>
-                </div>
-                <div class="chekout__flex">
-                    <h3 class="checkout__h3">Already registed?</h3>
-                    <p class="checkout__text">Please log in below</p>
-                    <label for="">EMAIL ADDRESS<strong>*</strong></label>
-                    <input type="text" class="checkout__input">
-                    
-                    <label for="">PASSWORD<strong>*</strong></label>
-                    <input type="text" class="checkout__input">
+            <form class="chekout__drop">
+                    <div class="chekout__flex">
+                        <h3 class="checkout__h3">Check as a guest or register</h3>
+                        <p class="checkout__text">Register with us for future convenience</p>
+                        
+                        <label class="checkout__radio">
+                            <input type="radio" name="regist" id="" class="checkout__radio">
+                            <div class="checkout__label">checkout as guest</div>
+                        </label>
 
-                    <div class="checkout__button">Log in</div>
-                </div>
-            </div>
+                        <label class="checkout__radio">
+                            <input type="radio" name="regist" id="" class="checkout__radio" checked>
+                            <div class="checkout__label">register</div>
+                        </label>
+                        
+                        <h3 class="checkout__h3">register and save time!</h3>
+                        <p class="checkout__text">Register with us for future convenience</p>
+
+                        <div class="checkout__text">
+                            <i class="fas fa-angle-double-right"></i> Fast and easy checkout <br>
+                            <i class="fas fa-angle-double-right"></i> Easy access to your order history and status
+                        </div>
+                        <div class="checkout__button">Continue</div>
+                    </div>
+                    <div class="chekout__flex">
+                        <h3 class="checkout__h3">Already registed?</h3>
+                        <p class="checkout__text">Please log in below</p>
+                        
+                        <label>
+                            <div class="checkout__label">EMAIL ADDRESS<strong>*</strong></div>
+                            <input type="email" class="checkout__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </label>
+                        
+                        <label>
+                            <div class="checkout__label">PASSWORD<strong>*</strong></div>
+                            <input type="password" class="checkout__input">
+                        </label>
+
+                        <p class="checkout__text accent">* Required Fileds</p>
+
+                        <div class="chekout__box">
+                            <input type="submit" class="checkout__button" value="Log in">
+                            <div class="checkout__Forgot">Forgot Password ?</div>
+                        </div>
+                    </div>
+            </form>
         </details>
         <details class="chekout__details">
             <summary class="chekout__list">02. BILLING INFORMATION</summary>
