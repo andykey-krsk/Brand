@@ -688,21 +688,40 @@ details[open] > summary::after
   text-transform: uppercase
 
 .product__add
+  display: none
+  flex-direction: column
+  position: absolute
+  top: 97px
+  left: 70px
+
+.product__add_2
+  display: flex
+  justify-content: space-between
+
+.product__add__cart
   height: 39px
   width: 123px
   border: 1px solid #ffffff
   font-size: 13px
   font-weight: bold
   color: #ffffff
-  display: none
+  display: flex
   justify-content: center
   align-items: center
-  position: absolute
-  top: 97px
-  left: 70px
+  margin-bottom: 8px
 
-.product__add img
-  height: 22px
+.product__arrow,
+.product__like
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 38px
+  width: 57px
+  border: 1px solid #ffffff
+  
+.product__add__cart img,
+.product__arrow img,
+.product__like img
   width: 23px
   margin-right: 5px
 
@@ -724,6 +743,98 @@ details[open] > summary::after
 .button__product_icon
   margin-left: 15px
 
+.product
+  display: flex
+  padding-top: 70px
+
+.product__box
+  width: 846px
+
+.product__category
+  width: 243px
+  margin-right: 50px
+
+.product__category__menu
+  display: flex
+  align-items: center
+  width: 243px
+  height: 37px
+  font-size: 14px
+  font-weight: bold
+  color: $ColorSite
+  line-height: 20px
+  text-transform: uppercase
+  border-left: 3px solid #ef5b70
+  border-bottom: 1px solid #ebebeb
+  padding-left: 13px
+  margin-bottom: 18px
+  
+.product__category__ul
+  list-style: none
+  padding: 16px
+
+.product__category__link
+  font-size: 14px
+  color: #6f6e6e
+  line-height: 33px
+
+
+.produckt__catalog
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 40px
+  margin-bottom: 40px  
+
+.produckt__catalog__nav
+  display: flex
+  justify-content: space-between
+
+.produckt__catalog__nav__button
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $ColorSite
+  height: 44px
+  width: 150px
+  font-size: 16px
+  font-weight: 500
+  background-color: #ffffff
+  border: 1px solid $ColorSite
+  border-radius: 3px
+
+.produckt__catalog__nav__button:hover
+  background-color: $ColorSite
+  color: #ffffff
+
+.produckt__catalog__nav__page
+  display: flex
+  align-items: center
+  font-size: 16px
+  font-weight: 300
+  color: #c4c4c4
+  line-height: 26px
+  height: 44px
+  width: 261px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+  border-radius: 3px
+  
+.produckt__catalog__nav__page strong
+  color: $ColorSite
+
+.produckt__sort
+  height: 165px
+  width: 100%
+
+.produckt__sort__check
+  height: 115px
+
+.produckt__sort__bottom  
+  height: 50px
+  background-color: #f3f3f3
+
+
 .aligne-center
   display: flex
   justify-content: center
@@ -733,6 +844,19 @@ details[open] > summary::after
   height: 529px
   width: 1140px
   background-color: $ColorSite-2
+
+.offer-box__product
+  display: flex
+  width: 1140px
+
+.color
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $ColorSite-2
+  height: 341px
+  padding: 0px
+  margin-top: 100px
 
 .offer__img
   position: relative
@@ -772,6 +896,16 @@ details[open] > summary::after
   display: flex
   margin-bottom: 40px
 
+.no_flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-right: 80px
+  margin-bottom: 0px
+
+.no_flex:last-of-type
+  margin-right: 0px
+
 .offer__content__icon
   width: 47px
   margin-right: 30px
@@ -787,6 +921,14 @@ details[open] > summary::after
   font-weight: 300
   color: #fbfbfb
   line-height: 24px
+
+.alegn-center
+  text-align: center
+
+.icon__margin
+  margin-left: 0px
+  margin-right: 0px
+  margin-bottom: 30px
 
 .chekout
   padding-top: 90px
@@ -898,6 +1040,38 @@ details[open] > .chekout__list::after
   background-color: #ffffff
   border: 2px solid #555555
   border-radius: 50%
+
+.checkout__radio input
+    display: none
+
+.checkout__radio
+  display: inline-block
+  margin: 20px
+
+.checkout__radio i
+  display: inline-block
+  width: 14px
+  height: 14px
+  background-color: #ffffff
+  border: 2px solid #555555
+  
+
+.checkout__radio input[type="radio"]+i
+  border-radius: 50%
+
+.checkout__radio i:befor
+  content: ''
+  position: absolute
+  top: 10px
+  bottom: 10px
+  right: 10px
+  left: 10px
+  background: #ffffff
+  transform: scale(0)
+
+.checkout__radio input:checked+ibefor
+  transform: scale(1)  
+
 
 .cart__box
     padding-top: 90px
@@ -1279,3 +1453,6 @@ details[open] > .chekout__list::after
 .socialnet__item:hover
   background-color: $ColorSite
   color: #fff
+
+.sub__mrgin
+  margin-top: 0px
