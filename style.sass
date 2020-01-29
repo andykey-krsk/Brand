@@ -225,6 +225,8 @@ details[open] > summary::after
   background-color: #ffffff
   border-radius: 5px
   padding: 20px
+  z-index: 1
+  border: 1px solid #e6e6e6
 
 .cart__drop__item
   display: flex
@@ -349,16 +351,19 @@ details[open] > summary::after
     line-height: 20px
     text-transform: uppercase
 
-.bread__crumb__nav
+.bread__crumb__nav,
+.bread__crumb__nav a
     font-size: 14px
     font-weight: 300
     color: #636363
     text-transform: uppercase
 
+.bread__crumb__nav a:hover
+    color: $ColorSite
+
 .bread__crumb__nav strong
     font-weight: bold
     color: $ColorSite
-    text-transform: uppercase
 
 .slider
     background-color: #f7f7f7
@@ -807,7 +812,8 @@ details[open] > summary::after
 details[open] > .chekout__list::after
   content: none
 
-.chekout__list
+.chekout__list,
+.cart__h3
   display: flex
   align-items: center
   height: 73px
@@ -816,6 +822,10 @@ details[open] > .chekout__list::after
   color: #222222
   text-align: left
   text-transform: uppercase
+
+.cart__h3
+  height: auto
+  margin-bottom: 20px
 
 .checkout__button
   display: flex
@@ -921,12 +931,15 @@ details[open] > .chekout__list::after
     margin-bottom: 20px
     padding-right: 20px
     border-bottom: 1px solid #eaeaea
+  
+/*.cart__row:hover
+  filter: brightness(80%)
+  background-color: #ffffff*/
 
 .cart__row__button
     display: flex
     justify-content: space-between
     padding-top: 20px
-    padding-bottom: 20px
 
 .cart__item
     display: flex
@@ -980,11 +993,11 @@ details[open] > .chekout__list::after
 .cart__item__action:hover
     color: #ff0d0d
 
-.cart__button
+.cart__button__big,
+.cart__button__small
     display: flex
     align-items: center
     height: 50px
-    width: auto
     background-color: #ffffff
     border: 1px solid #eaeaea
     padding-left: 38px
@@ -993,6 +1006,81 @@ details[open] > .chekout__list::after
     font-weight: bold
     color: #4a4a4a
     text-transform: uppercase
+
+.cart__button__small
+  padding-left: 18px
+  padding-right: 18px
+  height: 35px
+  font-size: 11px
+  font-weight: bold
+  width: auto
+  justify-content: center
+
+.cart__button__big:hover,
+.cart__button__small:hover
+  color: $ColorSite
+  border: 1px solid $ColorSite
+
+.cart__column__form
+  padding-top: 20px
+  width: 355px
+
+.cart__total
+  position: relative
+  background-color: #f5f3f3 
+  padding: 40px
+  width: 280px
+  height: 140px
+  margin-top: 20px
+
+.cart__total__text
+  font-size: 11px
+  color: #4a4a4a
+  text-transform: uppercase
+  text-align: right
+  margin-bottom: 15px
+
+.cart__total__text strong
+  margin-left: 20px
+  
+.cart__h3__total
+  justify-content: flex-end
+
+.cart__h3__total strong
+  color: $ColorSite
+  margin-left: 20px
+
+.cart__total__button
+  position: absolute
+  bottom: 40px
+  height: 50px
+  width: 280px
+  background-color: $ColorSite
+  font-size: 16px
+  font-weight: bold
+  color: #ffffff
+  text-transform: uppercase
+  border: 0px
+
+.cart__total__button:hover
+  filter: brightness(80%)
+
+.cart__input
+  height: 45px
+  width: 337px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  font-size: 13px
+  font-weight: 300
+  color: #b1b1b1
+  padding-left: 18px
+  margin-bottom: 20px
+
+.cart__text
+  font-size: 14px
+  font-weight: 300
+  color: #000000
+  margin-bottom: 24px
 
 .subscribe
   height: 438px
