@@ -31,18 +31,18 @@ a
   font-family: 'Lato'
   font-size: 27px
   font-weight: 300
-  color: rgba(34, 34, 34, 1)
+  color: #222222
   letter-spacing: 0.03em
 
-.logo__d
-  font-weight: 900
-  color: $ColorSite
-  letter-spacing: 0.03em
+  &__d
+    font-weight: 900
+    color: $ColorSite
+    letter-spacing: 0.03em
 
-.logo__img
-  margin-right: 13px
-  height: 51px
-  width: 59px
+  &__img
+    margin-right: 13px
+    height: 51px
+    width: 59px
 
 .header__left
   display: flex
@@ -72,13 +72,13 @@ a
 
 .header__browse::-webkit-details-marker
   display: none
-  
-.header__browse::after 
+
+.header__browse::after
   content: '\25B6'
   padding-right: 0.2em
   padding-left: 0.5em
 
-details[open] > summary::after 
+details[open] > summary::after
   content: '\25BC'
 
 .header__browse_details .drop
@@ -87,7 +87,7 @@ details[open] > summary::after
 .menu__list
   position: relative
 
-.menu__list:hover .drop 
+.menu__list:hover .drop
   display: flex
 
 .drop
@@ -112,7 +112,7 @@ details[open] > summary::after
 
 .drop__flex:last-of-type
   margin-right: 0
-  
+
 .drop__h3
   font-size: 14px
   color: #232323
@@ -337,89 +337,89 @@ details[open] > summary::after
   display: flex
 
 .bread__crumb
-    display: flex
-    align-items: center
-    justify-content: space-between
-    height: 148px
-    background-color: #f8f3f4
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 148px
+  background-color: #f8f3f4
 
 .bread__crumb__h2
-    font-size: 24px
-    font-weight: 900
-    color: $ColorSite
-    text-align: center
-    line-height: 20px
-    text-transform: uppercase
+  font-size: 24px
+  font-weight: 900
+  color: $ColorSite
+  text-align: center
+  line-height: 20px
+  text-transform: uppercase
 
 .bread__crumb__nav,
 .bread__crumb__nav a
-    font-size: 14px
-    font-weight: 300
-    color: #636363
-    text-transform: uppercase
+  font-size: 14px
+  font-weight: 300
+  color: #636363
+  text-transform: uppercase
 
 .bread__crumb__nav a:hover
-    color: $ColorSite
+  color: $ColorSite
 
 .bread__crumb__nav strong
-    font-weight: bold
-    color: $ColorSite
+  font-weight: bold
+  color: $ColorSite
 
 .slider
-    background-color: #f7f7f7
+  background-color: #f7f7f7
 
 .slider-box
-    position: relative
-    height: 777px
-    width: 1600px
-    background-color: #f7f7f7
-    border: 1px solid #eaeaea
-    background-image: url(img/single_page.png)
-    background-repeat: no-repeat
-    background-position: center
-    margin-left: -230px
+  position: relative
+  height: 777px
+  width: 1600px
+  background-color: #f7f7f7
+  border: 1px solid #eaeaea
+  background-image: url(img/single_page.png)
+  background-repeat: no-repeat
+  background-position: center
+  margin-left: -230px
 
 .slider__pagination
-    position: absolute
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 47px
-    width: 47px
-    background-color: rgba(42, 42, 42, 0.15)
-    top: 365px
-    font-size: 24px
-    color: #ffffff
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 47px
+  width: 47px
+  background-color: rgba(42, 42, 42, 0.15)
+  top: 365px
+  font-size: 24px
+  color: #ffffff
 
 .slider__pagination:hover
-    background-color: rgba(42, 42, 42, 0.50)
+  background-color: rgba(42, 42, 42, 0.50)
 
 .slider__pagination__right
-    right: 0
+  right: 0
 
 .slider__pagination__left
-    left: 0
+  left: 0
 
 .product-box
-    position: relative
-    height: 763px 
+  position: relative
+  height: 763px
 
 .product__parameters
-    padding: 70px 250px
-    position: absolute
-    height: 590px
-    width: 641px
-    background-color: #ffffff
-    border: 1px solid #eaeaea
-    top: -75px
+  padding: 70px 250px
+  position: absolute
+  height: 590px
+  width: 641px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  top: -75px
 
 .product__parameters__h4
-    font-size: 14px
-    font-weight: bold
-    color: $ColorSite
-    text-align: center
-    line-height: 24px
-    padding-bottom: 14px
+  font-size: 14px
+  font-weight: bold
+  color: $ColorSite
+  text-align: center
+  line-height: 24px
+  padding-bottom: 14px
 
 .product__parameters__h4__line
   height: 3px
@@ -432,54 +432,54 @@ details[open] > summary::after
   margin-bottom: 14px
 
 .product__parameters__h3
-    font-size: 18px
-    font-weight: 900
-    color: #4d4d4d
-    text-align: center
-    line-height: 24px
-    text-transform: uppercase
-    margin-bottom: 70px
+  font-size: 18px
+  font-weight: 900
+  color: #4d4d4d
+  text-align: center
+  line-height: 24px
+  text-transform: uppercase
+  margin-bottom: 70px
 
-.product__parameters__text    
-    font-size: 14px
-    font-weight: 300
-    color: #5e5e5e
-    text-align: center
-    line-height: 24px
-    margin-bottom: 30px
+.product__parameters__text
+  font-size: 14px
+  font-weight: 300
+  color: #5e5e5e
+  text-align: center
+  line-height: 24px
+  margin-bottom: 30px
 
 .product__parameters__text2
-    font-size: 14px
-    font-weight: bold
-    color: #2f2f2f
-    text-transform: uppercase
+  font-size: 14px
+  font-weight: bold
+  color: #2f2f2f
+  text-transform: uppercase
 
 .product__parameters__text2 strong
-    color: #b9b9b9
+  color: #b9b9b9
 
 .parameters-box
-    display: flex
-    padding: 0px 140px
-    justify-content: space-between
+  display: flex
+  padding: 0px 140px
+  justify-content: space-between
 
 .product__price
-    font-size: 24px
-    font-weight: bold
-    color: $ColorSite
-    text-align: center
-    padding: 40px 0px
-    border-bottom: 1px solid #eaeaea 
+  font-size: 24px
+  font-weight: bold
+  color: $ColorSite
+  text-align: center
+  padding: 40px 0px
+  border-bottom: 1px solid #eaeaea
 
 .product__parameters__form
-    padding: 63px 53px
+  padding: 63px 53px
 
 .product__parameters__input
-    height: 35px
-    width: 144px
-    background-color: #ffffff
-    border: 1px solid #eaeaea
-    margin-top: 16px
-    padding-left: 15px
+  height: 35px
+  width: 144px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  margin-top: 16px
+  padding-left: 15px
 
 .product__parameters__input::placeholder
   font-size: 13px
@@ -487,27 +487,27 @@ details[open] > summary::after
   line-height: 24px
 
 .form-box
-    display: flex
-    justify-content: space-between
-    margin-bottom: 28px
+  display: flex
+  justify-content: space-between
+  margin-bottom: 28px
 
 .product__add_to_cart
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 16px
-    font-weight: bold
-    color: $ColorSite
-    height: 55px
-    background-color: #ffffff
-    border: 1px solid $ColorSite
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 16px
+  font-weight: bold
+  color: $ColorSite
+  height: 55px
+  background-color: #ffffff
+  border: 1px solid $ColorSite
 
 .product__add_to_cart img
-    height: 24px
-    margin-right: 15px
+  height: 24px
+  margin-right: 15px
 
 .promo
-    background-color: #e8e8e8
+  background-color: #e8e8e8
 
 .promo__content
   display: flex
@@ -649,7 +649,7 @@ details[open] > summary::after
 .product__item:hover .product__add
   display: flex
 
-.product__item:hover .product__item__img 
+.product__item:hover .product__item__img
   filter: brightness(50%)
 
 .product__item:hover .product__item__img_single
@@ -710,6 +710,9 @@ details[open] > summary::after
   align-items: center
   margin-bottom: 8px
 
+.product__add__cart:last-child
+  margin: 0px
+
 .product__arrow,
 .product__like
   display: flex
@@ -718,12 +721,13 @@ details[open] > summary::after
   height: 38px
   width: 57px
   border: 1px solid #ffffff
-  
+
 .product__add__cart img,
 .product__arrow img,
 .product__like img
   width: 23px
   margin-right: 5px
+  margin-left: 5px
 
 .product__add:hover
   box-shadow: 0 0 8px #fff
@@ -768,7 +772,7 @@ details[open] > summary::after
   border-bottom: 1px solid #ebebeb
   padding-left: 13px
   margin-bottom: 18px
-  
+
 .product__category__ul
   list-style: none
   padding: 16px
@@ -784,7 +788,7 @@ details[open] > summary::after
   flex-wrap: wrap
   justify-content: space-between
   margin-top: 40px
-  margin-bottom: 40px  
+  margin-bottom: 40px
 
 .produckt__catalog__nav
   display: flex
@@ -819,7 +823,7 @@ details[open] > summary::after
   background-color: #ffffff
   border: 1px solid #ebebeb
   border-radius: 3px
-  
+
 .produckt__catalog__nav__page strong
   color: $ColorSite
 
@@ -830,7 +834,7 @@ details[open] > summary::after
 .produckt__sort__check
   height: 115px
 
-.produckt__sort__bottom  
+.produckt__sort__bottom
   height: 50px
   background-color: #f3f3f3
 
@@ -1006,6 +1010,7 @@ details[open] > .chekout__list::after
   border: 1px solid #eaeaea
   margin-bottom: 23px
   padding-left: 15px
+  padding-right: 15px
 
 .checkout__label strong
   font-size: 17px
@@ -1022,164 +1027,172 @@ details[open] > .chekout__list::after
   font-size: 13px
   color: #b3b2b2
   text-align: left
-  line-height: 20px
-  margin-bottom: 30px
+  line-height: 21px
+  margin-bottom: 35px
 
 .accent
   color: #ff0d0d
 
-.checkout__label
-  font-size: 12px
-  color: #222222
-  text-transform: uppercase
-  margin-bottom: 15px
-
-.checkout__radio
-  height: 14px
-  width: 14px
-  background-color: #ffffff
-  border: 2px solid #555555
-  border-radius: 50%
-
-.checkout__radio input
-    display: none
-
-.checkout__radio
-  display: inline-block
-  margin: 20px
-
-.checkout__radio i
-  display: inline-block
-  width: 14px
-  height: 14px
-  background-color: #ffffff
-  border: 2px solid #555555
-  
-
-.checkout__radio input[type="radio"]+i
-  border-radius: 50%
-
-.checkout__radio i:befor
-  content: ''
+.checkout-radio input
   position: absolute
-  top: 10px
-  bottom: 10px
-  right: 10px
-  left: 10px
-  background: #ffffff
-  transform: scale(0)
+  z-index: -1
+  opacity: 0
+  margin: 10px 0 0 7px
 
-.checkout__radio input:checked+ibefor
-  transform: scale(1)  
+.checkout-radio input:checked + .checkout-radio__text:after
+  opacity: 1
 
+.checkout-radio
+  height: 14px
+  padding-bottom: 20px
+
+  &__text
+    position: relative
+    padding: 0 0 0 28px
+    cursor: pointer
+    font-size: 12px
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 20px
+
+  &__text:before
+    content: ''
+    position: absolute
+    top: -1px
+    left: 0
+    height: 12px
+    width: 12px
+    background-color: #ffffff
+    border: 2px solid #555555
+    border-radius: 50%
+
+  &__text:after
+    content: ''
+    position: absolute
+    top: 4px
+    left: 5px
+    height: 6px
+    width: 6px
+    border-radius: 50%
+    background-color: #000000
+    opacity: 0
+    transition: .2s
 
 .cart__box
-    padding-top: 90px
+  padding-top: 90px
 
 .cart__header
-    list-style: none
-    display: flex
-    width: 100%
-    justify-content: space-between
-    padding-bottom: 20px
-    margin-bottom: 20px
-    border-bottom: 1px solid #eaeaea
+  list-style: none
+  display: flex
+  width: 100%
+  justify-content: space-between
+  padding-bottom: 20px
+  margin-bottom: 20px
+  border-bottom: 1px solid #eaeaea
 
 .cart__column
-    font-size: 13px
-    font-weight: bold
-    color: #222222
-    letter-spacing: -0.01em
-    line-height: 20px
-    text-transform: uppercase
-    width: auto
+  font-size: 13px
+  font-weight: bold
+  color: #222222
+  letter-spacing: -0.01em
+  line-height: 20px
+  text-transform: uppercase
+  width: auto
 
 .cart__column__fist
-    width: 480px
+  width: 480px
 
 .cart__row
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding-bottom: 20px
-    margin-bottom: 20px
-    padding-right: 20px
-    border-bottom: 1px solid #eaeaea
-  
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-bottom: 20px
+  margin-bottom: 20px
+  padding-right: 20px
+  border-bottom: 1px solid #eaeaea
+
 /*.cart__row:hover
   filter: brightness(80%)
   background-color: #ffffff*/
 
 .cart__row__button
-    display: flex
-    justify-content: space-between
-    padding-top: 20px
+  display: flex
+  justify-content: space-between
+  padding-top: 20px
 
 .cart__item
-    display: flex
+  display: flex
 
 .cart__item__img
-    height: 115px
-    margin-right: 20px
+  height: 115px
+  margin-right: 20px
 
 .cart__item__content
-    width: 350px
+  width: 350px
 
 .cart__item__name
-    font-size: 13px
-    color: #222222
-    text-transform: uppercase
-    padding-top: 12px
-    margin-bottom: 30px
+  font-size: 13px
+  color: #222222
+  text-transform: uppercase
+  padding-top: 12px
+  margin-bottom: 30px
+  font-weight: bold
+  display: block
 
 .cart__item__text
-    font-size: 13px
-    color: #575757
-    line-height: 17px
+  font-size: 13px
+  color: #575757
+  line-height: 17px
 
 .cart__item__text strong
-    font-weight: 300
-    color: #6f6e6e 
+  font-weight: 300
+  color: #6f6e6e
 
 .cart__item__price,
 .cart__item__shiping,
 .cart__item__subtotal,
 .cart__item__Quantity
-    font-size: 13px
-    font-weight: 600
-    color: #656565
-    width: auto
-    text-align: center
-    text-transform: uppercase
+  font-size: 13px
+  font-weight: 600
+  color: #656565
+  width: auto
+  text-align: center
+  text-transform: uppercase
 
 .cart__item__Quantity
-    height: 30px
-    width: 54px
-    background-color: #ffffff
-    border: 1px solid #eaeaea
+  height: 30px
+  width: 22px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  padding-left: 16px
+  padding-right: 16px
+
+.cart__button-action
+  border: 0
+  background-color: #ffffff
 
 .cart__item__action
-    font-size: 16px
-    color: #c0c0c0
-    text-align: right
-    text-transform: uppercase
+  font-size: 16px
+  color: #c0c0c0
+  text-align: right
+  text-transform: uppercase
 
 .cart__item__action:hover
-    color: #ff0d0d
+  color: #ff0d0d
 
 .cart__button__big,
 .cart__button__small
-    display: flex
-    align-items: center
-    height: 50px
-    background-color: #ffffff
-    border: 1px solid #eaeaea
-    padding-left: 38px
-    padding-right: 38px
-    font-size: 14px
-    font-weight: bold
-    color: #4a4a4a
-    text-transform: uppercase
+  display: flex
+  align-items: center
+  height: 50px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  padding-left: 38px
+  padding-right: 38px
+  font-size: 14px
+  font-weight: bold
+  color: #4a4a4a
+  text-transform: uppercase
 
 .cart__button__small
   padding-left: 18px
@@ -1201,7 +1214,7 @@ details[open] > .chekout__list::after
 
 .cart__total
   position: relative
-  background-color: #f5f3f3 
+  background-color: #f5f3f3
   padding: 40px
   width: 280px
   height: 140px
@@ -1216,7 +1229,7 @@ details[open] > .chekout__list::after
 
 .cart__total__text strong
   margin-left: 20px
-  
+
 .cart__h3__total
   justify-content: flex-end
 
