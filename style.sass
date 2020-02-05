@@ -76,6 +76,8 @@ a
 
 .header__browse::after
   content: '\25B6'
+  padding-right: 0.2em
+  padding-left: 0.5em
 
 details[open] > summary::after
   content: '\25BC'
@@ -497,6 +499,10 @@ details[open] > summary::after
   margin-top: 16px
   padding-left: 15px
   padding-right: 15px
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  appearance: none
 
 .select-label
   position: relative
@@ -803,13 +809,13 @@ details[open] > summary::after
   display: none
 
 .product__category__menu::after
-  content: '\25BC'
+  content: '\23F7'
   color: #6f6e6e
   padding-right: 0.2em
   padding-left: 1.5em
 
-.product__category__menu[open] > summary::after
-  content: '\25B2'
+.product__category details[open] > summary::after
+  content: '\23F6'
   color: $ColorSite
 
 .product__category__ul
@@ -853,17 +859,25 @@ details[open] > summary::after
 .produckt__catalog__nav__page
   display: flex
   align-items: center
-  font-size: 16px
-  font-weight: 300
-  color: #c4c4c4
-  line-height: 26px
+  justify-content: space-between
   height: 44px
   width: 261px
   background-color: #ffffff
   border: 1px solid #ebebeb
   border-radius: 3px
+  padding-right: 15px
+  padding-left: 15px
 
-.produckt__catalog__nav__page strong
+.product__page
+  font-size: 16px
+  font-weight: 400
+  color: #c4c4c4
+  line-height: 26px
+
+  &:hover
+    color: $ColorSite
+
+.selected-page
   color: $ColorSite
 
 .produckt__sort
@@ -872,10 +886,78 @@ details[open] > summary::after
 
 .produckt__sort__check
   height: 115px
+  display: flex
+  justify-content: space-between
 
-.produckt__sort__bottom
-  height: 50px
+.sort-box
+  height: 30px
   background-color: #f3f3f3
+  display: flex
+  padding: 10px
+
+.sort-select
+  font-size: 14px
+  color: #6f6e6e
+
+  &__label
+    height: 30px
+    display: flex
+    align-items: center
+    background-color: #ffffff
+    outline: 1px solid #ebebeb
+    padding-left: 12px
+    margin-right: 10px
+
+  &__label select
+    height: 30px
+    border: 0
+    padding-left: 10px
+    padding-right: 10px
+
+  &__text
+    display: flex
+    align-items: center
+    height: 30px
+    font-size: 14px
+    font-weight: bold
+    color: #6f6e6e
+    padding-right: 8px
+    border-right: 1px solid #ebebeb
+
+.check-column
+  width: 263px
+
+.size-box
+  display: flex
+  flex-wrap: wrap
+
+.sort__h3
+  font-size: 14px
+  font-weight: bold
+  color: #6f6e6e
+  line-height: 20px
+  text-transform: uppercase
+  margin-bottom: 24px
+
+.checkbox
+  height: 13px
+  width: 13px
+  background-color: #ffffff
+  border: 1px solid #ebebeb
+  border-radius: 0
+
+
+  &__label
+    display: flex
+    align-items: center
+    margin-bottom: 14px
+
+  &__text
+    font-size: 14px
+    color: #6f6e6e
+    text-transform: uppercase
+    margin-left: 8px
+    width: 40px
 
 
 .aligne-center
