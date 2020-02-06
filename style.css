@@ -1013,12 +1013,18 @@ details[open] > summary::after {
   color: #c4c4c4;
   line-height: 26px;
 }
-.product__page:hover {
+.product__page_slim {
+  display: flex;
+}
+
+.produckt__catalog__nav__page a:hover {
   color: #f16d7f;
+  font-weight: bold;
 }
 
 .selected-page {
   color: #f16d7f;
+  font-weight: bold;
 }
 
 .produckt__sort {
